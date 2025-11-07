@@ -6,15 +6,15 @@ This is the first project I have written in flutter. It is a simple app that con
 
 # Development Environment
 
-{Describe the tools that you used to develop the app}
+Visual Studio Code
 
-{Describe the programming language that you used and any libraries.}
+Google's Flutter framework was used to develop this app.
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Flutter Official Documentation](https://docs.flutter.dev/ui)
+* [NewsAPI Official Documentation](https://newsapi.org/docs/endpoints/top-headlines)
 
 # Future Work
 
