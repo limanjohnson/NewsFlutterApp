@@ -1,16 +1,24 @@
-# mobile_app_dev_news_proj
+# Overview
 
-A new Flutter project.
+This is the first project I have written in flutter. It is a simple app that connects to newsapi.org. It displays top stories and allows users to save them for later reading or access the online article.
 
-## Getting Started
+[Sofware Demo Video](https://youtu.be/RKIJBYuxcIQ)
 
-This project is a starting point for a Flutter application.
+# Development Environment
 
-A few resources to get you started if this is your first Flutter project:
+{Describe the tools that you used to develop the app}
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+{Describe the programming language that you used and any libraries.}
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Useful Websites
+
+{Make a list of websites that you found helpful in this project}
+* [Web Site Name](http://url.link.goes.here)
+* [Web Site Name](http://url.link.goes.here)
+
+# Future Work
+
+{Make a list of things that you need to fix, improve, and add in the future.}
+* Item 1
+* Item 2
+* Item 3
