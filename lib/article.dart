@@ -1,4 +1,6 @@
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
+
+// Model class representing a news article
 
 class Article {
   final String title;
@@ -19,6 +21,20 @@ class Article {
     required this.author,
   });
 
+  // Convert article to JSON for storage
+  Map<String, dynamic> toJson() {
+    return {
+      'title': title,
+      'urlToImage': imageUrl,
+      'description': description,
+      'url': url,
+      'source': {'name': sourceName},
+      'content': content,
+      'author': author,
+    };
+  }
+
+  // Create article from JSON
   factory Article.fromJson(Map<String, dynamic> json) {
     return Article(
       title: json['title'] ?? 'No Title',

@@ -4,12 +4,17 @@ import 'article.dart';
 
 class NewsService {
   static const String _apiKey = '0ec410038bd440d8afcf8d6a98beb13d';
-  static const String _topStoriesUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=0ec410038bd440d8afcf8d6a98beb13d';
 
-  static const String _businessUrl = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0ec410038bd440d8afcf8d6a98beb13d';
+  /// Fetch top headlines for country=us. If [category] is provided, it will
+  /// fetch headlines for that category (e.g. 'business', 'technology').
+  ///
+  /// Returns a list of [Article]. Throws an [Exception] on non-200 responses.
+  static Future<List<Article>> fetchArticles({String? category}) async {
+    final base = 'https://newsapi.org/v2/top-headlines?country=us';
+    final categoryQuery = (category != null && category.isNotEmpty) ? '&category=$category' : '';
+    final url = '$base$categoryQuery&apiKey=$_apiKey';
 
-  static Future<List<Article>> fetchArticles() async {
-    final response = await http.get(Uri.parse(_topStoriesUrl));
+    final response = await http.get(Uri.parse(url));
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
