@@ -12,9 +12,9 @@ Google's Flutter framework was used to develop this app.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Flutter Official Documentation](https://docs.flutter.dev/ui)
 * [NewsAPI Official Documentation](https://newsapi.org/docs/endpoints/top-headlines)
+* [Helpfule Youtube Video by Flutter Mapp Channel](https://www.youtube.com/watch?v=3kaGC_DrUnw&t=5115s)
 
 # Future Work
 
